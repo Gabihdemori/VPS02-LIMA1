@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jutz - Carrinho de Compras</title>
+    <link rel="stylesheet" href="css/carrinho.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <header class="main-header">
+        <div class="top-bar">
+            <div class="logo">Jutz</div>
+            <div class="header-icons">
+                <a href="contatos.html"><i class="fas fa-headset"></i> Atendimento</a>
+                <a href="carrinho.html"><i class="fas fa-shopping-cart"></i> Meu Carrinho</a>
+            </div>
+        </div>
+        <nav class="nav-bar">
+            <a href="index.html">Início</a>
+            <a href="produtos.html">Produtos</a>
+            <a href="quem-somos.html">Sobre</a>
+            <a href="contatos.html">Contato</a>
+            <a href="trocas.html">Política de Troca e Devolução</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="carrinho">
+            <h2>Carrinho de Compras</h2>
+            <ul class="carrinho-lista"></ul>
+            <div class="total-container">
+                <p>Total: <span class="total">R$ 0.00</span></p>
+            </div>
+
+            <h3>Dados de Entrega</h3>
+            <form id="dadosEntrega">
+                <label for="endereco">Endereço:</label>
+                <input type="text" id="endereco" name="endereco" required>
+
+                <label for="cep">CEP:</label>
+                <input type="text" id="cep" name="cep" required>
+
+                <label for="cidade">Cidade:</label>
+                <input type="text" id="cidade" name="cidade" required>
+
+                <label for="estado">Estado:</label>
+                <input type="text" id="estado" name="estado" required>
+
+                <h3>Dados do Comprador</h3>
+                <label for="nomeComprador">Nome:</label>
+                <input type="text" id="nomeComprador" name="nomeComprador" required>
+
+                <label for="emailComprador">Email:</label>
+                <input type="email" id="emailComprador" name="emailComprador" required>
+
+                <label for="telefoneComprador">Telefone:</label>
+                <input type="text" id="telefoneComprador" name="telefoneComprador" required>
+
+                <button type="submit">Finalizar Compra</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Jutz. Todos os direitos reservados.</p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
+
+
